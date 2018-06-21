@@ -2,12 +2,9 @@ package utilities;
 
 public class Car {
 
-    private int cap;                    //car capacity
-    private int location;               //car location
-    private int revenue;                //total revenue made by car
-    private int[] passengerLocation;    //location of all passengers in the car
-    private int carTime;
-
+    private int cap, location, revenue, carTime;                                 
+    private int[] passengerLocation;    
+   
     public Car(){
         passengerLocation = new int[5];
         cap=5;
@@ -29,7 +26,9 @@ public class Car {
         this.passengerLocation = passengerLocation;
     }
 
-    public void setCarTime(int carTime) { this.carTime = carTime; }
+    public void setCarTime(int carTime) { 
+        this.carTime = carTime; 
+    }
 
     public int getCap() {
         return cap;
@@ -47,8 +46,9 @@ public class Car {
         return passengerLocation;
     }
 
-    public int getCarTime() { return carTime; }
-
+    public int getCarTime() { 
+        return carTime; 
+    }
 
     public void passengerLocationReset() {
         for(int i=0; i<5; i++){
