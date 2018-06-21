@@ -64,12 +64,11 @@ public class ReadInput {
     public void readBasic()throws IOException {
 
         try{
-            Scanner sc = new Scanner( new File("C:\\Users\\PHALGUNI\\Documents\\input.txt"));
+            Scanner sc = new Scanner( new File("C:\\Users\\Documents\\input.txt"));
             n=sc.nextInt();
             N=sc.nextInt();
             c=sc.nextInt();
             R=sc.nextInt();
-            //System.out.println("n: "+n+"\nN: "+N+"\nc: "+c+"\nR: "+R);
             location = new int[n][n];
             for(int i=0;i<n;i++) {
                 for(int j=0;j<n;j++){
@@ -79,9 +78,9 @@ public class ReadInput {
                 }
             }
 
-            car = new Car[N];           //create reference of car
+            car = new Car[N];          
             for(int i=0; i<N; i++){
-                car[i] = new Car(); //instantiate memory
+                car[i] = new Car();
             }
             for(int i=0 ; i<N ; i++){
                 car[i].setLocation(sc.nextInt());
