@@ -7,6 +7,9 @@ public class Dijkstras {
         int inf=999,v=0;
         int[] distance = new int[l];
         int[] visited = new int[l];
+        for(int i=0; i<l;i++){
+            visited[i]=0;
+        }
         distance=graph[src];
         visited[src]=1;
         distance[src]=0;
